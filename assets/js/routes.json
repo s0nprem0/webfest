@@ -1,0 +1,8 @@
+{
+    "home": "/",
+    "about": "/pages/about/",
+    "organization": "/pages/org",
+
+
+    "404": "/pages/404.html"
+}

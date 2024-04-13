@@ -1,0 +1,78 @@
+:root {
+    --elits-color: #ef8700;
+    --csso-color: #4fc4ce;
+}
+
+
+.orgCards-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--bg-color);
+    width: 450px;
+    height: 130px;
+    border-radius: 0.7rem;
+
+    .card-content{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        .orglogo-container{
+            width: 128px;
+            img {
+                aspect-ratio: 1/1;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5rem;
+            }
+        }
+
+        .org-info {
+            width: 65%;
+
+            .org-links{
+                display: flex;
+                margin: 1rem 0;
+                gap: 1rem;
+            }
+
+        }
+    }
+}
+
+.orgName {
+    font-weight: 900;
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+
+.orgShort {
+    color: #f2f2f2;
+    opacity: 0.6;
+    text-align: center;
+
+}
+
+.pill {
+    width: 100%;
+    margin: 3.5rem 0;
+    background-color: palegreen;
+    padding: 0 13px;
+}
+
+
+.elits {
+    background-color: var(--elits-color);
+}
+
+.csso {
+    background-color: var(--csso-color);
+}
