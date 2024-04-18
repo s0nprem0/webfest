@@ -4,75 +4,57 @@
 }
 
 
-.orgCards-list {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
+.organization-grid {
+    padding: 2rem;
+    display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+    overflow: clip;
     gap: 1rem;
 }
 
 .card {
-    padding: 1rem;
+    background: var(--gradient-header-color);
+}
+
+.card:hover{
+    border-bottom: 3px solid white;
+}
+
+.card__img {
+    align-self: center;
     margin: 1rem;
-    background-color: var(--bg-color);
-    width: 450px;
-    height: 130px;
-    border-radius: 0.7rem;
-
-    .card-content{
-        display: inline-flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        .orglogo-container{
-            width: 128px;
-            img {
-                aspect-ratio: 1/1;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                border-radius: 5rem;
-            }
-        }
-
-        .org-info {
-            width: 65%;
-
-            .org-links{
-                display: flex;
-                margin: 1rem 0;
-                gap: 1rem;
-            }
-
-        }
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    img {
+        width: 100%;
     }
 }
 
-.orgName {
-    font-weight: 900;
-    font-size: 15px;
-    white-space: pre-wrap;
+.card-content{
+    font-family: "Montserrat";
+    position: relative;
+    align-self: center;
+    padding: 1rem;
 }
 
-.orgShort {
+.card-name {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+.card-acronym {
+    font-weight: 600;
     color: #f2f2f2;
     opacity: 0.6;
-    text-align: center;
-
 }
 
-.pill {
-    width: 100%;
-    margin: 3.5rem 0;
-    background-color: palegreen;
-    padding: 0 13px;
-}
-
-
-.elits {
-    background-color: var(--elits-color);
-}
-
-.csso {
-    background-color: var(--csso-color);
+.org-links{
+    display: flex;
+    margin: 1rem 0;
+    gap: 1rem;
 }
