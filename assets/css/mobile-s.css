@@ -1,6 +1,33 @@
-@media (max-width: 768px) {
-    .logo-name-container {
-        font-size: 30%;
+@media (max-width: 35em) { /* 560px */
+    .wrapper {
+        width: calc(100% - 3rem);
     }
 
+    .header__navbar{
+        flex: 1 0;
+        flex-direction: row;
+
+        .logo-name_container{
+            .univ{
+                display: none;
+            }
+
+            .logo-name{
+                display: none;
+            }
+    
+            span.logo-name__short{
+                font-size: var(--fs-18);
+                display: block;
+            }
+        }
+
+        .nav-menu{
+            display: none;
+        }
+
+        .burger{
+            display: block;
+        }
+    }
 }

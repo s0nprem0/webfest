@@ -6,19 +6,21 @@
 
 .organization-grid {
     padding: 2rem;
-    display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     overflow: clip;
     gap: 1rem;
+    justify-content: center;
 }
 
 .card {
+    width: 500px;
+    height: auto;
     background: var(--gradient-header-color);
 }
 
 .card:hover{
-    border-bottom: 3px solid white;
+    cursor: wait;
 }
 
 .card__img {
