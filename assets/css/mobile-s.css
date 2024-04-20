@@ -1,10 +1,9 @@
-@media (max-width: 35em) { /* 560px */
+@media (max-width: 40em){ /* 560px */
     .wrapper {
         width: calc(100% - 3rem);
     }
 
     .header__navbar{
-        flex: 1 0;
         flex-direction: row;
 
         .logo-name_container{
@@ -29,5 +28,23 @@
         .burger{
             display: block;
         }
+    }
+}
+
+@media (max-width:1024px) { /* for  minimum laptop/tablet */
+    a.nav-link{
+        font-size: 10px;
+    }
+
+    .logo{
+        width: 32px;
+    }
+
+    .logo-name_container {
+
+        .logo-name{
+            font-size: 8px;
+        }
+
     }
 }
