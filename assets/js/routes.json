@@ -1,7 +1,7 @@
 {
-    "home":"/",
-    "about":"/pages/about/",
-    "organization": "/pages/organization.html",
+    "home": "/",
+    "about": "/pages/about/",
+    "organization": "/pages/org",
 
 
     "404": "/pages/404.html"
