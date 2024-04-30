@@ -2,49 +2,8 @@
     .wrapper {
         width: calc(100% - 3rem);
     }
-
-    .header__navbar{
-        flex-direction: row;
-
-        .logo-name_container{
-            .univ{
-                display: none;
-            }
-
-            .logo-name{
-                display: none;
-            }
-    
-            span.logo-name__short{
-                font-size: var(--fs-18);
-                display: block;
-            }
-        }
-
-        .nav-menu{
-            display: none;
-        }
-
-        .burger{
-            display: block;
-        }
-    }
 }
 
-@media (max-width:1024px) { /* for  minimum laptop/tablet */
-    a.nav-link{
-        font-size: 10px;
-    }
-
-    .logo{
-        width: 32px;
-    }
-
-    .logo-name_container {
-
-        .logo-name{
-            font-size: 8px;
-        }
-
-    }
+@media (max-width: 768px){
+    
 }
