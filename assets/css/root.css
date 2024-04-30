@@ -9,8 +9,8 @@
     --ceit-sub-color: #101f36;
 
     --text: #f0f0f0;
-    --text-secondary: ;
-    --background: #080808;
+    --text-secondary: var(--text);
+    --background: #0f0f0f;
     --primary: #f18700;
     --secondary: #3c4142;
     --accent: #e65804;
