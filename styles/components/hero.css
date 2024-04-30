@@ -1,0 +1,27 @@
+.hero.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 25rem;
+    background: linear-gradient(var(--semi-transparent),var(--semi-transparent)),url(/src/assets/hero/DIT.png) no-repeat center /cover;
+    padding: var(--size-9xl);
+}
+
+.hero-text{
+    width: 50%;
+    text-wrap: pretty;
+}
+
+.hero__title{
+    font-size: var(--size-6xl);
+}
+
+.hero__logo{
+    display: inline-block;
+    width: var(10em);
+}
+
+.hero.btn{
+    padding: 1rem;
+}
