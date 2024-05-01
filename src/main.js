@@ -6,4 +6,5 @@ import '../styles/util.css';
 // components
 import '../styles/components/header.css';
 import '../styles/components/hero.css';
+import '../styles/components/history.css';
 

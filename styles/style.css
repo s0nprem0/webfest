@@ -8,6 +8,8 @@
   --ceit-color: #e65804;
   --ceit-sub-color: #101f36;
 
+  --font-family: 'General Sans', sans-serif;
+
   --text: #f0f0f0;
   --text-secondary: var(--text);
   --background: #131313;
@@ -125,7 +127,7 @@ html {
 }
 
 body{
-  font-family: 'General Sans', sans-serif !important;
+  font-family: var(--font-family);
   background-color: var(--background);
   color: var(--text);
 }

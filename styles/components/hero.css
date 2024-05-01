@@ -1,27 +1,41 @@
 .hero.container{
+    max-width: inherit;
+    height: 36rem;
+    background: linear-gradient(var(--semi-transparent) 70%,var(--primary-600)),url(/src/assets/hero/DIT.png) no-repeat center /cover;
+    box-shadow: 0 1rem 30px 50px var(--primary-600);
+    padding: 3rem 0;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     gap: 1rem;
-    height: 25rem;
-    background: linear-gradient(var(--semi-transparent),var(--semi-transparent)),url(/src/assets/hero/DIT.png) no-repeat center /cover;
-    padding: var(--size-9xl);
+    margin-bottom: 5rem;
 }
 
 .hero-text{
-    width: 50%;
-    text-wrap: pretty;
+    max-width: 65%;
 }
 
 .hero__title{
-    font-size: var(--size-6xl);
+    font-size: var(--size-5xl);
+}
+
+.hero__description{
+    font-size: var(--size-base);
+    text-wrap: pretty;
 }
 
 .hero__logo{
-    display: inline-block;
-    width: var(10em);
+    display: block;
+    width: 12.5rem;
 }
 
 .hero.btn{
     padding: 1rem;
 }
+
+/*@media (min-width:425px){
+    .hero__logo img{
+        width: 30%;
+    }
+} */
