@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../src/assets/elits.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700,1,2&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="../src/assets/elits.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700,1,2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
       <img class="header__logo" src="./src/assets/elits.svg" alt="">
       <nav>
         <ul class="header__menu">
@@ -18,116 +21,194 @@
         </ul>
         <button class="header__burger">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd" />
           </svg>
         </button>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="hero" class="hero container">
-        <div class="hero__logo">
-          <img src="./src/assets/elits.svg">
-        </div>
-        <div class="hero-text">
-          <h1 class="hero__title">Welcome</h1>
-          <p class="hero__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odio non, error dolorum minus voluptate repudiandae recusandae rerum excepturi veniam? Ea earum culpa modi et voluptates maiores quasi nisi illo?</p>
-          <a class="btn" href="#">Sign up</a>
-        </div>
-      </section>
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero__logo">
+        <img src="./src/assets/elits.svg">
+      </div>
+      <div class="hero-text">
+        <h1 class="hero__title">Welcome</h1>
+        <p class="hero__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odio non, error
+          dolorum minus voluptate repudiandae recusandae rerum excepturi veniam? Ea earum culpa modi et voluptates
+          maiores quasi nisi illo?</p>
+        <a class="btn" href="#">Sign up</a>
+      </div>
+    </section>
 
-      <section id="history" class="history container">
-        <h1 class="title">HISTORY</h1>
-        <p>The COLLEGE OF ENGINEERING AND INFORMATION TECHNOLOGY (CEIT) started as the Department of Agricultural
-          Engineering in 1976. It offered basic agricultural engineering courses required by the BSA curriculum.</p>
+    <section id="history" class="history container">
+      <h1 class="title">HISTORY</h1>
+      <p>The COLLEGE OF ENGINEERING AND INFORMATION TECHNOLOGY (CEIT) started as the Department of Agricultural
+        Engineering in 1976. It offered basic agricultural engineering courses required by the BSA curriculum.</p>
       <p>In 1985, the unit was renamed to Department of Engineering and Agro-Industrial Technology (DEAIT). By virtue
-          of Board Resolution No. 5, S1985, it started to offer Bachelor of Science in Agricultural Engineering on the first semester of SY 1985 – 1986.</p>
-      <p>In 1992, the department was elevated to the School status. This resulted in the creation of two (2) distinct departments: the Engineering Science Department and the Agricultural Engineering Department. The formation of these departments delineated the basic engineering science courses from the agricultural engineering
-          courses.</p>
+        of Board Resolution No. 5, S1985, it started to offer Bachelor of Science in Agricultural Engineering on the
+        first semester of SY 1985 – 1986.</p>
+      <p>In 1992, the department was elevated to the School status. This resulted in the creation of two (2) distinct
+        departments: the Engineering Science Department and the Agricultural Engineering Department. The formation of
+        these departments delineated the basic engineering science courses from the agricultural engineering
+        courses.</p>
       <p>In 1993, the Department of Engineering Technology was created. The newly created department offers non-degree
-          courses in engineering technology.</p>
+        courses in engineering technology.</p>
       <p>In 1998, when the College was elevated to University status, the School of Engineering (SEng) was
-          subsequently elevated to the College level and was named as the College of Engineering (CEng).</p>
+        subsequently elevated to the College level and was named as the College of Engineering (CEng).</p>
       <p>To accommodate IT courses offerings; the College was renamed as the College of Engineering and Information
-          Technology (CEIT) in 2001.</p>
+        Technology (CEIT) in 2001.</p>
       <p>As approved by the Board of Regents, CEIT offers various engineering programs, computer-based programs, and
-          industrial technology programs.</p>
-      </section>
+        industrial technology programs.</p>
+    </section>
 
-      <section id="awards" class="award container">
-        <h1 class="title">AWARDS</h1>
-        <div class="award grid">
-          <div class="container award__card">
-            <h2 class="award__year">2022-2023</h2>
-            <ul class="objectives">
-                <li>Know your Prof: A Public Posting of Instructors' Schedule for First Semester Academic Year 2022-2023</li>
-                <li>Bulletin Board Revamp</li>
-                <li>Project STREAM: Simulcast Trends among the Mass (Collaboration from CEIT)</li>
-                <li>New Lanyard Design for BSIT Student</li>
-                <li>DIT eSports Event Week</li>
-                <li>“We are Hiring!”: A Facebook Public Posting for Job Opportunity</li>
-                <li>“Just A Love Story”: An Entry for Marahuyo (CEIT Fim Festival)</li>
-                <li>PITIKON 2023: A Photography Contest with the theme The New Normal it student’s visualization in the midst of bended learning system</li>
-                <li>The Game of Love Booth: A Booth Entry for CEIT Booth</li>
-            </ul>
-          </div>
-          <div class="container award__card">
-            <h2 class="award__year">2023-2024</h2>
-            <ul class="objectives">
-                <li>Know your Prof: A Public Posting of Instructors' Schedule for First Semester Academic Year 2022-2023</li>
-                <li>Bulletin Board Revamp</li>
-                <li>Project STREAM: Simulcast Trends among the Mass (Collaboration from CEIT)</li>
-                <li>New Lanyard Design for BSIT Student</li>
-                <li>DIT eSports Event Week</li>
-                <li>“We are Hiring!”: A Facebook Public Posting for Job Opportunity</li>
-                <li>“Just A Love Story”: An Entry for Marahuyo (CEIT Fim Festival)</li>
-                <li>PITIKON 2023: A Photography Contest with the theme The New Normal it student’s visualization in the midst of bended learning system</li>
-                <li>The Game of Love Booth: A Booth Entry for CEIT Booth</li>
-            </ul>
-          </div>
-          <div class="container award__card">
-            <h2 class="award__year">2024-2025</h2>
-            <ul class="objectives">
-                <li>Know your Prof: A Public Posting of Instructors' Schedule for First Semester Academic Year 2022-2023</li>
-                <li>Bulletin Board Revamp</li>
-                <li>Project STREAM: Simulcast Trends among the Mass (Collaboration from CEIT)</li>
-                <li>New Lanyard Design for BSIT Student</li>
-                <li>DIT eSports Event Week</li>
-                <li>“We are Hiring!”: A Facebook Public Posting for Job Opportunity</li>
-                <li>“Just A Love Story”: An Entry for Marahuyo (CEIT Fim Festival)</li>
-                <li>PITIKON 2023: A Photography Contest with the theme The New Normal it student’s visualization in the midst of bended learning system</li>
-                <li>The Game of Love Booth: A Booth Entry for CEIT Booth</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="news" class="news container">
-        <h1 class="title ">Newsletter</h1>
-      </section>
-
-      <section class="container">
-        <h1 class="title">Events</h1>
-      </section>
-      <section class="container">
-        <h1 class="title">Join us</h1>
-      </section>
-      <section class="container">
-        <h1 class="title">Objectives</h1>
-        <ul class="wrapper objectives">
-            <li>To promote knowledge among the members of Bachelor of Science in Information Technology program and equip them with essential foundation</li>
-            <li>To encourage interrelation among members from other higher educational institutions for mutual exchange of knowledge, experience and personal development.</li>
-            <li>To work as a group for the welfare of the members in particular and to the college in general.</li>
-            <li>To instill among members the true spirit of camaraderie and cooperation.</li>
-            <li>To work for enhancement of Bachelor of Science in Information Technology as
-                a field of endeavor not only in Cavite State University but for the country as
-                well.</li>
-            <li>To establish linkages with national as well as international organizations.</li>
+    <section id="awards" class="award container">
+      <h1 class="title">AWARDS</h1>
+      <div class="award grid">
+        <div class="container award__card">
+          <h2 class="award__year">2022-2023</h2>
+          <ul class="objectives">
+            <li>Know your Prof: A Public Posting of Instructors' Schedule for First Semester Academic Year 2022-2023
+            </li>
+            <li>Bulletin Board Revamp</li>
+            <li>Project STREAM: Simulcast Trends among the Mass (Collaboration from CEIT)</li>
+            <li>New Lanyard Design for BSIT Student</li>
+            <li>DIT eSports Event Week</li>
+            <li>“We are Hiring!”: A Facebook Public Posting for Job Opportunity</li>
+            <li>“Just A Love Story”: An Entry for Marahuyo (CEIT Fim Festival)</li>
+            <li>PITIKON 2023: A Photography Contest with the theme The New Normal it student’s visualization in the
+              midst of bended learning system</li>
+            <li>The Game of Love Booth: A Booth Entry for CEIT Booth</li>
           </ul>
-      </section>
-    </main>
-    <script type="module" src="/src/main.js"></script>
-    <script src="/src/route.js"></script>
-  </body>
+        </div>
+        <div class="container award__card">
+          <h2 class="award__year">2023-2024</h2>
+          <ul class="objectives">
+            <li>Know your Prof: A Public Posting of Instructors' Schedule for First Semester Academic Year 2022-2023
+            </li>
+            <li>Bulletin Board Revamp</li>
+            <li>Project STREAM: Simulcast Trends among the Mass (Collaboration from CEIT)</li>
+            <li>New Lanyard Design for BSIT Student</li>
+            <li>DIT eSports Event Week</li>
+            <li>“We are Hiring!”: A Facebook Public Posting for Job Opportunity</li>
+            <li>“Just A Love Story”: An Entry for Marahuyo (CEIT Fim Festival)</li>
+            <li>PITIKON 2023: A Photography Contest with the theme The New Normal it student’s visualization in the
+              midst of bended learning system</li>
+            <li>The Game of Love Booth: A Booth Entry for CEIT Booth</li>
+          </ul>
+        </div>
+        <div class="container award__card">
+          <h2 class="award__year">2024-2025</h2>
+          <ul class="objectives">
+            <li>Know your Prof: A Public Posting of Instructors' Schedule for First Semester Academic Year 2022-2023
+            </li>
+            <li>Bulletin Board Revamp</li>
+            <li>Project STREAM: Simulcast Trends among the Mass (Collaboration from CEIT)</li>
+            <li>New Lanyard Design for BSIT Student</li>
+            <li>DIT eSports Event Week</li>
+            <li>“We are Hiring!”: A Facebook Public Posting for Job Opportunity</li>
+            <li>“Just A Love Story”: An Entry for Marahuyo (CEIT Fim Festival)</li>
+            <li>PITIKON 2023: A Photography Contest with the theme The New Normal it student’s visualization in the
+              midst of bended learning system</li>
+            <li>The Game of Love Booth: A Booth Entry for CEIT Booth</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="news" class="news container">
+      <h1 class="title ">Newsletter</h1>
+    </section>
+
+    <!--
+    <section class="container">
+      <h1 class="title">Events</h1>
+    </section>
+    -->
+
+    <!--
+    <section class="container">
+      <h1 class="title">Join us</h1>
+    </section>
+    -->
+
+    <!--
+    <section class="container">
+      <h1 class="title">Objectives</h1>
+      <ul class="wrapper objectives">
+        <li>To promote knowledge among the members of Bachelor of Science in Information Technology program and equip
+          them with essential foundation</li>
+        <li>To encourage interrelation among members from other higher educational institutions for mutual exchange of
+          knowledge, experience and personal development.</li>
+        <li>To work as a group for the welfare of the members in particular and to the college in general.</li>
+        <li>To instill among members the true spirit of camaraderie and cooperation.</li>
+        <li>To work for enhancement of Bachelor of Science in Information Technology as
+          a field of endeavor not only in Cavite State University but for the country as
+          well.</li>
+        <li>To establish linkages with national as well as international organizations.</li>
+      </ul>
+    </section>
+  -->
+  </main>
+  <footer class="footer">
+    <div class="footer__grid container">
+      <div class="footer__links">
+        <h4>
+          <strong>Contact US</strong>
+        </h4>
+          <li>
+            <a class="hyperlink" href="https://www.facebook.com/CvSUELITS">
+              <i class="ri-facebook-circle-fill"></i>
+              <span>CVSU Elite League of Information Technology Students </span>
+            </a>
+          </li>
+          <li>
+            <a class="hyperlink">
+              <i class="ri-mail-line"></i>
+              <span>elits.cvsu@gmail.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="hyperlink">
+              <i class="ri-phone-fill"></i>
+              <span>+63 912 345 6789</span>
+            </a>
+      </div>
+      <div class="footer__links">
+        <h4>
+          <strong>Quick Links</strong>
+        </h4>
+        <li>
+          <i class="ri-file-list-line"></i>
+          <a href="https://myportal.cvsu.edu.ph">Student Portal</a>
+        </li>
+        <li>
+          <i class="ri-account-box-line"></i>
+          <a href="https://registrar.cvsu.edu.ph">List of Enrolled Students</a>
+        </li>
+      </div>
+
+      <div class="footer__links">
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+        <li>Credits</li>
+        <li>Copyright</li>
+      </div>
+
+    </div>
+    <div class="footer__copyright">
+      <hr>
+      <small class="footer-copyright">© 2024 Elite League of Information Technology Students. All rights reserved.
+      </small>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+  <script src="/src/route.js"></script>
+</body>
+
 </html>

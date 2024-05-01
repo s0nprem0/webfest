@@ -1,0 +1,25 @@
+.footer{
+    background-color: var(--secondary);
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__grid > .footer__links{
+    padding: 1rem;
+    * {
+        color: inherit;
+        list-style: none;
+        text-decoration: none;
+    }
+}
+.footer__grid > .footer__links{
+    padding: 1rem;
+    *:hover :not(strong){
+        color: var(--primary);
+        list-style: none;
+        text-decoration: none;
+    }
+}
