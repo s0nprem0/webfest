@@ -10,10 +10,12 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 5rem;
+    
 }
 
 .hero-text{
-    max-width: 65%;
+    margin: 0 2rem;
+    max-width: 64ch;
 }
 
 .hero__title{
@@ -34,8 +36,9 @@
     padding: 1rem;
 }
 
-/*@media (min-width:425px){
-    .hero__logo img{
-        width: 30%;
+@media (min-width:425px){
+    .hero__logo > *{
+        display: flex;
+        place-self: center;
     }
-} */
+}

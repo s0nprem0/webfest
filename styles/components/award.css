@@ -1,0 +1,40 @@
+.award.container{
+    border-radius: 12px;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+.award.grid{
+    --min: 45ch;
+    --gap: 1rem;
+
+    /* Set up container positioning */
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    grid-gap: var(--gap);
+    /* Enable overflow along our scroll axis */
+    overflow-x: auto;
+    /* Define axis and scroll type, where `mandatory` means any scroll attempt will cause a scroll to the next item */
+    scroll-snap-type: x mandatory;
+    padding: 0 0 1.5rem;
+    margin: 1rem 0;
+}
+.award.grid > * {
+    width: min(45ch,50vw);
+    /* Choose how to align children on scroll */
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+.award__card{
+    padding: 1rem;
+    background-color: var(--accent);
+    border-radius: 12px;
+}
+
+.award__year{
+    padding: 1rem;
+    text-align: center;
+}
