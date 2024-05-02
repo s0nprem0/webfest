@@ -27,6 +27,13 @@
     font-size: var(--size-5xl);
 }
 
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
 .smol-flexbox-grid {
   --min: 16ch;
   --gap: 1rem;

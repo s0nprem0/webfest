@@ -42,9 +42,8 @@
 }
 
 .news__more{
-  flex: 1;
-  display: flex;
-  align-self: flex-end;
+  justify-self: flex-end;
+  display: inline-flex;
 }
 
 .news__body{
@@ -52,8 +51,6 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  
 }
 
 .news__body > p{
@@ -66,4 +63,6 @@
   display: flex;
   padding: 1rem;
   margin-top: auto;
+  align-self: flex-end;
+  justify-content: flex-end;
 }

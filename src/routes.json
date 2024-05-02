@@ -1,0 +1,7 @@
+{
+    "home": "/",
+    "about": "/pages/about.html",
+    "contact": "/pages/contact.html",
+    "dev": "/pages/dev.html",
+    "404": "/pages/404.html"
+}
