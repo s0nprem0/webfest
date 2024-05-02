@@ -53,6 +53,10 @@
   flex-direction: column;
 }
 
+.news__tag.tag{
+  background-color: var(--primary);
+}
+
 .news__body > p{
   display: -webkit-box;
   -webkit-line-clamp: 3;

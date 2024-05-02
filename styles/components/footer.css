@@ -2,7 +2,6 @@
     border-top: 3px solid var(--primary);
     background-color: var(--secondary);
     font-size: var(--size-fluid-1);
-    margin-top: 5rem;
 }
 
 .footer__grid{

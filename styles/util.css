@@ -24,7 +24,7 @@
 }
 
 .title{
-    font-size: var(--size-5xl);
+    font-size: var(--size-fluid-4);
 }
 
 .tag {
