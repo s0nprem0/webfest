@@ -2,9 +2,9 @@
 
 # General Guidelines
 <ul>
-  <li>The participant can either be solo or part of a team consisting of a maximum of three (3) members.</li>
-  <li>The participant/team have the freedom to decide on the creative aspects of the websites they create.</li>
-  <li>The website to be created should be a school organizational one.</li>
+  <li>The participant can either be <strong>solo</strong> or <strong>part of a team consisting of a maximum of three (3) members.</strong></li>
+  <li>The <strong>participant/team</strong> have the freedom to decide on the creative aspects of the websites they create.</li>
+  <li>The website to be created should be a <strong>school organizational one.</strong></li>
   <li>Participant can use a CSS framework for design responsiveness. Using a JavaScript (JS) framework is optional, but it can enhance website interactivity, making it more engaging.</li>
   <li>Follow the provided site map with the necessary components, sections, and contents. (The sitemap link will be shared shortly.)</li>
   <li>The main color themes are provided in the sitemap. They can add tertiary colors such as white or any color that does not clash with the main theme colors.</li>
