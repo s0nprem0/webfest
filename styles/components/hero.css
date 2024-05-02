@@ -19,7 +19,7 @@
 }
 
 .hero__title{
-    font-size: var(--size-5xl);
+    font-size: var(--size-fluid-4);
 }
 
 .hero__description{
@@ -32,8 +32,16 @@
     width: 12.5rem;
 }
 
-.hero.btn{
+.hero .btn{
+    background-color: transparent;
     padding: 1rem;
+    border: 1px white solid;
+}
+
+.hero .btn:hover{
+    padding: 1rem;
+    border: 3px transparent;
+    background-color: var(--primary-600);
 }
 
 @media (min-width:425px){

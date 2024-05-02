@@ -1,8 +1,14 @@
 .award.container{
     border-radius: 12px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1rem;
     background-color: var(--secondary);
+    font-size: var(--size-fluid-1);
+}
+
+.award__title{
+    text-align: start;
+    padding: 1rem;
 }
 .award.grid{
     --min: 45ch;
@@ -18,7 +24,6 @@
     /* Define axis and scroll type, where `mandatory` means any scroll attempt will cause a scroll to the next item */
     scroll-snap-type: x mandatory;
     padding: 0 0 1.5rem;
-    margin: 1rem 0;
 }
 .award.grid > * {
     width: min(45ch,50vw);

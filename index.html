@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="../src/assets/elits.svg" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/elits.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700,1,2&display=swap" rel="stylesheet">
@@ -15,9 +15,10 @@
       <img class="header__logo" src="./src/assets/elits.svg" alt="">
       <nav>
         <ul class="header__menu">
-          <li><a href="#" class="header__link">Home</a></li>
-          <li><a href="#" class="header__link">About</a></li>
-          <li><a href="#" class="header__link">Shop</a></li>
+          <li><a href="#" class="header__link" data-location="home">Home</a></li>
+          <li><a href="#" class="header__link" data-location="about">About</a></li>
+          <li><a href="#" class="header__link" data-location="">Shop</a></li>
+          <li><a href="#" class="btn header__link">ABOUT DEV</a></li>
         </ul>
         <button class="header__burger">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -40,12 +41,12 @@
         <p class="hero__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odio non, error
           dolorum minus voluptate repudiandae recusandae rerum excepturi veniam? Ea earum culpa modi et voluptates
           maiores quasi nisi illo?</p>
-        <a class="btn" href="#">Sign up</a>
+        <a class="hero btn" href="#">Sign up</a>
       </div>
     </section>
 
     <section id="history" class="history container">
-      <h1 class="title">HISTORY</h1>
+      <h1 class="">HISTORY</h1>
       <p>The COLLEGE OF ENGINEERING AND INFORMATION TECHNOLOGY (CEIT) started as the Department of Agricultural
         Engineering in 1976. It offered basic agricultural engineering courses required by the BSA curriculum.</p>
       <p>In 1985, the unit was renamed to Department of Engineering and Agro-Industrial Technology (DEAIT). By virtue
@@ -66,7 +67,7 @@
     </section>
 
     <section id="awards" class="award container">
-      <h1 class="title">AWARDS</h1>
+      <h1 class="award__title">AWARDS</h1>
       <div class="award grid">
         <div class="container award__card">
           <h2 class="award__year">2022-2023</h2>
@@ -122,6 +123,57 @@
 
     <section id="news" class="news container">
       <h1 class="title ">Newsletter</h1>
+      <div class="news__list">
+        <div class="news__card">
+          <img src="/src/assets/news/n1.jpg">
+          <div class="news__body">
+            <date>November 25, 2023</date>
+            <h4>Introduction of Officers</h4>
+            <span>Author</span>
+            <p>Tigers, we are proudly introduced to you our ELITS Officers! ✨</p>
+          </div>
+          <div class="news__footer">
+            <a class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="news__card">
+          <img src="/src/assets/news/n2.jpg">
+          <div class="news__body">
+            <date>December 25, 2023</date>
+            <h4>ELITS Merch</h4>
+            <span>Author</span>
+            <p>Tigers, we are proudly introduced to you our ELITS Officers! ✨</p>
+          </div>
+          <div class="news__footer">
+            <a class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="news__card">
+          <img src="/src/assets/news/n3.jpg">
+          <div class="news__body">
+            <date>February 13, 2024</date>
+            <h4>Introduction of Officers</h4>
+            <span>Author</span>
+            <p>Tigers, we are proudly introduced to you our ELITS Officers! ✨</p>
+          </div>
+          <div class="news__footer">
+            <a class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="news__card">
+          <img src="/src/assets/news/n4.jpg">
+          <div class="news__body">
+            <date>February 13, 2024</date>
+            <h4>Roar</h4>
+            <span>Author</span>
+            <p>Tigers, we are proudly introduced to you our ELITS Officers! ✨</p>
+          </div>
+          <div class="news__footer">
+            <a class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <a class="btn news__more">More News</a>
     </section>
 
     <!--
@@ -160,24 +212,24 @@
         <h4>
           <strong>Contact US</strong>
         </h4>
-          <li>
-            <a class="hyperlink" href="https://www.facebook.com/CvSUELITS">
-              <i class="ri-facebook-circle-fill"></i>
-              <span>CVSU Elite League of Information Technology Students </span>
-            </a>
-          </li>
-          <li>
-            <a class="hyperlink">
-              <i class="ri-mail-line"></i>
-              <span>elits.cvsu@gmail.com</span>
-            </a>
-          </li>
+        <li>
+          <a class="hyperlink" href="https://www.facebook.com/CvSUELITS">
+            <i class="ri-facebook-circle-fill"></i>
+            <span>CVSU Elite League of Information Technology Students </span>
+          </a>
+        </li>
+        <li>
+          <a class="hyperlink">
+            <i class="ri-mail-line"></i>
+            <span>elits.cvsu@gmail.com</span>
+          </a>
+        </li>
 
-          <li>
-            <a class="hyperlink">
-              <i class="ri-phone-fill"></i>
-              <span>+63 912 345 6789</span>
-            </a>
+        <li>
+          <a class="hyperlink">
+            <i class="ri-phone-fill"></i>
+            <span>+63 912 345 6789</span>
+          </a>
       </div>
       <div class="footer__links">
         <h4>
@@ -201,14 +253,14 @@
       </div>
 
     </div>
-    <div class="footer__copyright">
-      <hr>
-      <small class="footer-copyright">© 2024 Elite League of Information Technology Students. All rights reserved.
+    <div class="footer container">
+      <small>© 2024 Elite League of Information Technology Students. All
+        rights reserved.
       </small>
     </div>
   </footer>
   <script type="module" src="/src/main.js"></script>
-  <script src="/src/route.js"></script>
+  <!-- <script type="module" src="/src/route.js"></script> -->
 </body>
 
 </html>

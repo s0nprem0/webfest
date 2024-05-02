@@ -1,6 +1,7 @@
 .news.container{
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 .news__title{
@@ -8,71 +9,61 @@
     text-align: center;
 }
 
-/* Import smol css utils | smolcss.dev*/
-.smol-card-component {
-    --img-ratio: 3/2;
+.news__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.news__card{
+  --news--img-ratio: 3/2;
+
+  display: flex;
+  width: clamp(20rem, calc(20rem + 2vw), 12rem);
+  background-color: var(--accent);
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.news__card > img{
+  border-radius: 10px 10px 0 0;
+  aspect-ratio: var(--news--img-ratio);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  width: 100%;
+}
+
+.news__more{
+  flex: 1;
+  display: flex;
+  align-self: flex-end;
+}
+
+.news__body{
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
   
-    display: flex;
-    flex-direction: column;
-    background-color: var(--secondary);
-    /* Supported for flexbox in modern browsers since April 2021 */
-    gap: .5em;
-    box-shadow: 0 0 0.5rem hsl(0 0% 0% / 35%);
-    border-radius: 0.5rem;
-  }
-  
-  .smol-card-component > img {
-    aspect-ratio: var(--img-ratio);
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .smol-card-component > img:first-child {
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-  
-  .smol-card-component > img:last-child {
-    border-radius: 0 0 0.5rem 0.5rem;
-    margin-top: auto;
-  }
-  
-  .smol-card-component > :not(img) {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  
-    /* Prevent typography "orphans" */
-    text-wrap: pretty;
-  }
-  
-  .smol-card-component > :not(img):first-child {
-    margin-top: 1rem;
-  }
-  
-  .smol-card-component > :not(h2, h3, h4) {
-    font-size: 0.9rem;
-  }
-  
-  .smol-card-component > a {
-    align-self: end;
-  }
-  
-  .smol-centering {
-    display: grid;
-    place-content: center;
-  }
-  
-  .smol-right {
-    display: grid;
-    place-content: right;
-  }
-  
-  .smol-css-grid {
-    --min: 20ch;
-    --gap: 1rem;
-  
-    display: grid;
-    grid-gap: var(--gap);
-    /* min() with 100% prevents overflow
-    in extra narrow spaces */
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-  }
+}
+
+.news__body > p{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+.news__footer{
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}

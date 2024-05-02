@@ -7,17 +7,19 @@
 .btn{
     display: inline-block;
     user-select: none;
+    cursor: pointer;
     padding: 0.5em 1em;
     margin: .5rem 0;
     border-radius: 7px;
     font-weight: 600;
     text-decoration: none;
     background-color: var(--primary);
-    color: inherit;
+    color: var(--text);
     transition: all 200ms;
   }
 
 .btn:hover{
+    color: var(--text-secondary);
     box-shadow: 0 0 20px var(--primary);
 }
 

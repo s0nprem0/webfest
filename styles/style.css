@@ -13,7 +13,7 @@
   --font-family: 'General Sans', sans-serif;
 
   --text: #f0f0f0;
-  --text-secondary: var(--text);
+  --text-secondary: #cccccc;
   --background: #131313;
   --primary: #f18700;
   --secondary: #3c4142;

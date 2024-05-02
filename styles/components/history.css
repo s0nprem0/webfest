@@ -3,4 +3,5 @@
     padding: 1rem;
     background-color: var(--secondary);
     border-radius: 12px;
+    font-size:var(--size-fluid-1);
 }
