@@ -1,0 +1,52 @@
+.about__title{
+    color: var(--primary-500);
+    text-shadow: 0 0 10px var(--primary-700);
+    padding: .50rem;
+}
+
+.about__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.3rem;
+}
+
+.about__body{
+    overflow: hidden;
+    padding: 0.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.about__cards > .about__card{
+    transition: 300ms;
+    display: flex;
+    width: clamp(20rem, calc(20rem + 2vw), 12rem);
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--primary-700);
+    background-position-x: 105%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-image: url(/src/assets/elits.svg);
+    padding: 1rem;
+    border-radius: 13px;
+}
+
+.about__cards .about__card:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+.about__cards:hover > .about__card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+.about__name{
+    font-size: var(--size-2xl);
+}
+
+.about__bio{
+    font-size: var(--size-s);
+}

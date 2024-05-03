@@ -4,27 +4,81 @@
     padding: 0 1rem;
 }
 
-.btn{
-    display: inline-block;
-    user-select: none;
-    cursor: pointer;
-    padding: 0.5em 1em;
-    margin: .5rem 0;
-    border-radius: 7px;
-    font-weight: 600;
-    text-decoration: none;
-    background-color: var(--primary);
-    color: var(--text);
-    transition: all 200ms;
-  }
+.about-article{
+  padding-bottom: 2rem;
+}
 
-.btn:hover{
-    color: var(--text-secondary);
-    box-shadow: 0 0 20px var(--primary);
+.btn {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  margin: .5rem 0;
+  border-radius: 7px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: var(--text);
+  transition: all 200ms;
+}
+
+.btn:focus {
+  box-shadow: 0 0 2px var(--primary);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--loading {
+  position: relative;
+  cursor: not-allowed;
+}
+
+.btn--loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border: 2px solid var(--text);
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn--ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--ripple::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 .title{
-    font-size: var(--size-fluid-4);
+    font-size: var(--size-fluid-3);
+}
+
+.paragraph{
+  font-size: var(--text-base);
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.75;
 }
 
 .tag {

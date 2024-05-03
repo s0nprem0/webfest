@@ -15,6 +15,7 @@
         color: inherit;
         list-style: none;
         text-decoration: none;
+        padding: .25rem 0;
     }
 }
 .footer__grid > .footer__links{

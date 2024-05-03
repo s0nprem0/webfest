@@ -135,6 +135,7 @@
 *{
   margin: 0;
   line-height: calc(1em + 0.5rem);
+  /* outline: 1px dotted red; */
 }
 
 html {
@@ -160,4 +161,8 @@ button{
   background: none;
   cursor: pointer;
   color: inherit;
+}
+
+marquee{
+  user-select: none;
 }

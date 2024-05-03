@@ -12,7 +12,6 @@
     "vite": "^5.2.10"
   },
   "dependencies": {
-    "bulma": "^1.0.0",
     "open-props": "^1.7.4",
     "vite-plugin-ssr": "^0.4.142"
   }

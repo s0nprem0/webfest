@@ -8,11 +8,11 @@
 
 .award__title{
     text-align: start;
-    padding: 1rem;
 }
 .award.grid{
+    margin-top: 1rem;
     --min: 45ch;
-    --gap: 1rem;
+    --gap: 3rem;
 
     /* Set up container positioning */
     display: grid;
@@ -34,12 +34,12 @@
 
 
 .award__card{
-    padding: 1rem;
+    padding: .25rem;
     background-color: var(--accent);
     border-radius: 12px;
 }
 
 .award__year{
-    padding: 1rem;
+    padding: 0rem;
     text-align: center;
 }
