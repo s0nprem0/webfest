@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url(https://api.fontshare.com/v2/css?f[]=general-sans@300,400,401,500,501,600,601,700,1,2&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-50: #f2f2f2;
+  --text-100: #e6e6e6;
+  --text-200: #cccccc;
+  --text-300: #b3b3b3;
+  --text-400: #999999;
+  --text-500: #808080;
+  --text-600: #666666;
+  --text-700: #4d4d4d;
+  --text-800: #333333;
+  --text-900: #1a1a1a;
+  --text-950: #0d0d0d;
+
+  --background-50: #f2f2f2;
+  --background-100: #e6e6e6;
+  --background-200: #cccccc;
+  --background-300: #b3b3b3;
+  --background-400: #999999;
+  --background-500: #808080;
+  --background-600: #666666;
+  --background-700: #4d4d4d;
+  --background-800: #333333;
+  --background-900: #1a1a1a;
+  --background-950: #0d0d0d;
+
+  --primary-50: #fff4e5;
+  --primary-100: #ffe9cc;
+  --primary-200: #ffd399;
+  --primary-300: #ffbd66;
+  --primary-400: #ffa733;
+  --primary-500: #ff9100;
+  --primary-600: #cc7400;
+  --primary-700: #995700;
+  --primary-800: #663a00;
+  --primary-900: #331d00;
+  --primary-950: #1a0e00;
+
+  --secondary-50: #f2f3f3;
+  --secondary-100: #e4e6e7;
+  --secondary-200: #c9cecf;
+  --secondary-300: #afb5b6;
+  --secondary-400: #949c9e;
+  --secondary-500: #798486;
+  --secondary-600: #61696b;
+  --secondary-700: #494f50;
+  --secondary-800: #303536;
+  --secondary-900: #181a1b;
+  --secondary-950: #0c0d0d;
+
+  --accent-50: #e5e5ff;
+  --accent-100: #ccccff;
+  --accent-200: #9999ff;
+  --accent-300: #6666ff;
+  --accent-400: #3333ff;
+  --accent-500: #0000ff;
+  --accent-600: #0000cc;
+  --accent-700: #000099;
+  --accent-800: #000066;
+  --accent-900: #000033;
+  --accent-950: #00001a;
+
+
+}
+
+body {
+  font-family: "General Sans";
+  background-color: var(--background-950);
+  color: var(--text-50)
+}
+
+
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+@layer components {
+  .header {
+    @apply sticky top-0 bg-gradient-to-b blur-sm opacity-70 p-2 md:p-0;
+  }
+
+  .header__container {
+    @apply flex justify-between items-center max-w-5xl mx-auto px-4 md:px-0;
+  }
+
+  .header__logo {
+    @apply w-48 cursor-pointer;
+  }
+}
