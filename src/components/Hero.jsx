@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col h-[36rem] p-8 text-center items-center gap-4 mb-5 bg-[url(./src/assets/hero/DIT.png)] bg-cover bg-gray-700 bg-blend-multiply"
+      className="flex flex-col h-[36rem] p-8 text-center items-center gap-4 mb-5 bg-[url(./src/assets/hero/DIT.png)] bg-cover bg-center bg-gray-700 bg-blend-multiply"
     >
       <div className="block">
         <img src={logo} />
