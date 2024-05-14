@@ -8,8 +8,8 @@ function Home() {
     <>
       <Nav />
       <Hero />
-      <Footer />
       <History />
+      <Footer />
     </>
   );
 }
