@@ -76,7 +76,7 @@ export default {
       },
     },
     backgroundImage: {
-      hero: "url('src/assets/hero/DIT.png')",
+      "hero-main": "url('src/assets/hero/DIT.png')",
     },
   },
   plugins: [],
