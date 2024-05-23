@@ -7,10 +7,13 @@ import Nav from "./components/Nav";
 // import pages
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
+  // Add the catch-all route with the NotFound component
+  { path: "*", element: <NotFound /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
