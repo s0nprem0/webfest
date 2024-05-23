@@ -67,10 +67,18 @@ const Footer = () => {
         {/* Legal Section */}
         <div>
           <ul className="list-none space-y-2">
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
-            <li>Credits</li>
-            <li>Copyright</li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Credits</a>
+            </li>
+            <li>
+              <a href="#">Copyright</a>
+            </li>
           </ul>
         </div>
       </div>
