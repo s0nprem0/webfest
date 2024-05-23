@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 // import pages
 import Home from "./pages/Home.jsx";
@@ -18,6 +19,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <Nav />
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
