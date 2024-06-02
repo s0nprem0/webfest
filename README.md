@@ -1,4 +1,4 @@
-<h1>Elite League of Information Technology Students - WebFest 2024 Entry</h1>
+<h1>Elite League of Information Technology Students - WebFest 2024 Entry (dispoed)</h1>
 
 # General Guidelines
 <ul>
